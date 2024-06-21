@@ -1,8 +1,9 @@
-def sumOfTwoIntegers(a, b):
-    sum = a + b
+def simpleArraySum(arr):
+    sum = 0
+    for i in range (len(arr)):
+        sum = sum + arr[i]
     return sum
 
-num1 = int(input('Please enter a number: '))
-num2 = int(input('Please enter a number: '))
-result = sumOfTwoIntegers(num1, num2)
-print(str(num1) + " + " + str(num2) + " = " + str(result))
+arr = [1, 2, 3, 4, 10, 11]
+result = simpleArraySum(arr)
+print(result)
